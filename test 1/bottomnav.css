@@ -1,0 +1,77 @@
+body {
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 6% auto 0;
+}
+.single-card {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  margin: 15px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  background: #3984ee;
+  border-radius: 15px;
+  transition: all 0.8s ease-in-out;
+}
+.single-card:hover {
+  transform: translateY(-10px);
+}
+.icon-area {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.icon-area img {
+  position: absolute;
+  left: 20%;
+  top: 25%;
+}
+
+.wrapper a {
+  text-decoration: none;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 174, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.single-card:hover .overlay {
+  opacity: 1;
+}
+.info {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.info h3 {
+  margin: 15px 0 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
