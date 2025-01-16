@@ -61,7 +61,7 @@ setInterval(() => {
   h = h < 10 ? "0" + h : h;
   m = m < 10 ? "0" + m : m;
   s = s < 10 ? "0" + s : s;
-  currentTime.innerText = `${h}:${m}:${s} ${ampm}`;
+  currentTime.innerText = `${h}:${m} ${ampm}`;
 
   // Check if alarm should ring
   if (alarmTime === `${h}:${m} ${ampm}`) {
