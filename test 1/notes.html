@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width initial-scale=1"/>
+
+    <title>NOTES</title>
+    <!-- Link Styles -->
+    <link rel="stylesheet" href="sides.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bodysides">
+    <div class="sidebar">
+      <div class="logo_details">
+        <img class="logoimg" src="logo2.png" height="60" width="60">
+        <div class="logo_name">DiRo</div>
+        <!-- <i class="bx bx-menu" id="btn"></i> -->
+        <span class="imgbar"> <img src="X.pic.png" alt="" id="btn" width="30px" height="30px" style="opacity: 0;"></span>
+
+        <img class="menu" src="menu.pic.png" alt="" id="m1" width="45px" height="40px"
+         style="opacity: 1;
+         position: absolute;
+         z-index: -20;" >
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="homepage.html">
+            <img src="home.pic.png" alt="" height="25px" width="25px">
+
+            <!-- <i class="bx bx-home" ></i> -->
+            <span class="link_name">HOME</span>
+          </a>
+          <span class="tooltip">HOME</span>
+        </li>
+        <!-- <li>
+          <a href="#">
+            <i class="bx bx-book"></i>
+            <span class="link_name">SUBJECTS</span>
+          </a>
+          <span class="tooltip">SUBJECTS</span>
+        </li> -->
+        <li>
+          <a href="calendar.html">
+            <!-- <i class="bx bx-calendar"></i> -->
+            <img src="calendar.pic.png" alt="" width="10px" height="10px">
+
+            <span class="link_name">CALENDAR</span>
+          </a>
+          <span class="tooltip">CALENDAR</span>
+        </li>
+        <li>
+          <a href="notes.html">
+            <!-- <i class="bx bx-pencil"></i> -->
+
+            <img src="pencil.pic.png" alt="" width="15px" height="15px">
+
+            <span class="link_name">NOTES</span>
+          </a>
+          <span class="tooltip">NOTES</span>
+        </li>
+        <li>
+          <a href="todo.html">
+            <!-- <i class="bx bx-list-check"></i>
+              -->
+              <img src="checklist.pic.png" alt="" width="10px" height="10px"  >
+
+            <span class="link_name">TODO-LIST</span>
+          </a>
+          <span class="tooltip">TODO-LIST</span>
+        </li>
+        <li>
+          <a href="ALARM.html">
+              <!-- <i class="bx bx-cog"></i> -->
+
+              <img src="clock.pic.png" alt="">
+
+              <span class="link_name">CLOCK</span>
+        </a>
+        <span class="tooltip">CLOCK</span>
+      </li>
+
+        <!-- <li class="profile">
+          <div class="profile_details">
+            <img src="side-profile.jpeg" alt="profile image" />
+            <div class="profile_content">
+              <div class="name">Anna Jhon</div>
+              <div class="designation">Admin</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li> -->
+      </ul>
+    </div>
+
+    <!-- main page -->
+    <section class="home-section">
+      <!DOCTYPE html>
+      <!-- Coding By CodingNepal youtube.com/codingnepal -->
+      <html lang="en" dir="ltr">
+        <meta charset="utf-8" />
+        <!-- <title>Notes App in JavaScript | CodingNepal</title> -->
+        <head>
+          <link rel="stylesheet" href="notes.css" />
+          <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+          <!-- font -->
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <!--  -->
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+          />
+
+          <!-- Iconscout Link For Icons -->
+          <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+          />
+        </head>
+
+        <!-- main code -->
+
+        <body>
+          <div class="popup-box">
+            <div class="popup">
+              <div class="content">
+                <header>
+                  <p>Add new Note</p>
+                  <i class="uil uil-times" style="opacity:0 ;"></i>
+                  <img src="greyX.pic.png" alt="" width="11px" height="11px" style="position: absolute; transform: translateX(320px); margin-bottom: 7px;">
+                </header>
+                <form action="#">
+                  <div class="row title">
+                    <label>Title</label>
+                    <input type="text" />
+                  </div>
+                  <div class="row description">
+                    <label>Description</label>
+                    <textarea></textarea>
+                  </div>
+                  <button>Add note</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <li class="add-box">
+              <div class="icon"><img src="plusblue.pic.png" alt="" width="40px" height="40px"></i></div>
+              <p>Add new note</p>
+            </li>
+          </div>
+          <!-- text boc -->
+
+          <script src="notes.js"></script>
+        </body>
+      </html>
+    </section>
+    <!-- Scripts -->
+    <script src="sides.js"></script>
+
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
