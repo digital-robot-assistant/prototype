@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width initial-scale=1"/>
+      <title>DIRO HOMEPAGE</title>
+      <!-- Link Styles -->
+      <link rel="stylesheet" href="sidehome.css" />
+      <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      />
+    </head>
+    <body class="bodysides">
+      <div class="sidebar">
+      <div class="logo_details">
+        <img class="logoimg" src="logo2.png" height="60" width="60">
+        <div class="logo_name">DiRo</div>
+        <!-- <i class="bx bx-menu" id="btn"></i> -->
+        <span class="imgbar"> <img src="X.pic.png" alt="" id="btn" width="30px" height="30px"></span>
+
+        <img class="menu" src="menu.pic.png" alt="" id="m1" width="50px" height="50px"
+         style="opacity: 1;
+         position: absolute;
+         z-index: -20;" >
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#">
+            <img src="home.pic.png" alt="" height="25px" width="25px">
+
+            <!-- <i class="bx bx-home" ></i> -->
+            <span class="link_name">HOME</span>
+          </a>
+          <span class="tooltip">HOME</span>
+        </li>
+        <!-- <li>
+          <a href="#">
+            <i class="bx bx-book"></i>
+            <span class="link_name">SUBJECTS</span>
+          </a>
+          <span class="tooltip">SUBJECTS</span>
+        </li> -->
+        <li>
+          <a href="calendar.html">
+            <!-- <i class="bx bx-calendar"></i> -->
+            <img src="calendar.pic.png" alt="" width="10px" height="10px">
+
+            <span class="link_name">CALENDAR</span>
+          </a>
+          <span class="tooltip">CALENDAR</span>
+        </li>
+        <li>
+          <a href="notes.html">
+            <!-- <i class="bx bx-pencil"></i> -->
+
+            <img src="pencil.pic.png" alt="" width="15px" height="15px">
+
+            <span class="link_name">NOTES</span>
+          </a>
+          <span class="tooltip">NOTES</span>
+        </li>
+        <li>
+          <a href="todo.html">
+            <!-- <i class="bx bx-list-check"></i>
+              -->
+              <img src="checklist.pic.png" alt="" width="10px" height="10px"  >
+
+            <span class="link_name">TODO-LIST</span>
+          </a>
+          <span class="tooltip">TODO-LIST</span>
+        </li>
+        <li>
+          <a href="ALARM.html">
+              <!-- <i class="bx bx-cog"></i> -->
+
+              <img src="clock.pic.png" alt="">
+
+              <span class="link_name">CLOCK</span>
+        </a>
+        <span class="tooltip">CLOCK</span>
+      </li>
+
+      <li class="QRside">
+        <a href="QR.html">
+            <!-- <i class="bx bx-cog"></i> -->
+
+            <img src="QRicon.png" alt="">
+
+            <span class="link_name">QR code</span>
+      </a>
+      <span class="tooltip">QR code</span>
+
+    <style>
+@media screen and (max-width: 768px) {
+.QRside { display: none;}
+}
+    </style></li>
+
+        <!-- <li class="profile">
+          <div class="profile_details">
+            <img src="side-profile.jpeg" alt="profile image" />
+            <div class="profile_content">
+              <div class="name">Anna Jhon</div>
+              <div class="designation">Admin</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li> -->
+      </ul>
+    </div>
+
+    <!-- main page -->
+<section>
+<style>
+
+slider {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+
+}
+
+section{
+    /* width: 1293px; */
+    overflow-x: hidden;
+    height: 1000px;
+    background-color: rgb(51, 107, 212);
+    /* transform: translateX(-110px); */
+  }
+.imagecontainer {
+width: 1290px;
+height: 280px;
+overflow: hidden;
+transform: translateX(-110px);
+/* background-color: aqua 5% transparent; */
+
+}
+
+/* @media screen and (max-width: 1000px) {
+  section slider {
+    object-fit: ;
+  }
+} */
+
+
+hr{
+  margin-top: -26.4px;
+}
+.bottomcont{
+transform: translate(50px,-50px);
+}
+
+
+@media screen and (max-width: 500px) {
+ .image2 {display: none;
+}
+ .image3 {display: block;
+
+}
+}
+
+</style>
+<slider>
+<div class="slideshow-container">
+<div class="imagecontainer">
+<div class="mySlides fade">
+  <!-- <div class="numbertext">1 / 3</div> -->
+  <img class="image2" src="1.png" style="width: 100%;">
+  <img class="image3" src="1.1.png" style="
+  margin-left: 140px;
+  height: 400px">
+
+
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">2 / 3</div> -->
+  <img class="image2" src="2.png" style="width:100%">
+  <img class="image3" src="2.2.png" style="
+  margin-left: 150px;
+  height: 400px;">
+
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">3 / 3</div> -->
+  <img class="image2" src="3.png" style="width:100%">
+  <img class="image3" src="3.3.png" style="
+  margin-left: 160px;
+  height: 400px;" >
+
+</div>
+</div>
+</div>
+<br>
+
+<!-- <div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div> -->
+</slider>
+
+<hr color="white
+" size="10">
+<br>
+<div class="bottomcont">
+
+
+    <!-- divinectorweb.com -->
+
+
+      <link rel="stylesheet" href="bottomnav.css" />
+    </head>
+    <body>
+      <div class="wrapper">
+        <!-- <div class="single-card">
+          <div class="icon-area">
+            <a href="subject.html">
+              <i class="bx bx-book"></i>
+            </a>
+          </div>
+
+          <div class="info">
+            <h3>subjects</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          </div>
+        </div> -->
+
+        <div class="single-card">
+          <div class="icon-area">
+            <a href="calendar.html">
+          <img src="calendar.pic.png" alt="" width="150px" height="150px">
+            </a>
+
+          </div>
+          <div class="info">
+            <h3>CALENDAR</h3>
+            <!-- <p class="price">$599.99</p> -->
+            <p>IMPORTANT DATE TO REMEMBER FOR
+              SUBMISSIONS AND DEADLINES</p>
+          </div>
+        </div>
+
+        <div class="single-card">
+          <a href="notes.html">
+          <div class="icon-area">
+          <img src="pencil.pic.png" alt="" width="150px" height="150px">
+          </a>
+
+
+          </div>
+          <div class="info">
+            <h3>NOTES</h3>
+            <p>IMPORTANT NOTICE & LECTURES</p>
+          </div>
+        </div>
+        <div class="single-card">
+          <div class="icon-area">
+            <a href="todo.html">
+              <img src="checklist.pic.png" alt=""" width="150px" height="150px"  >
+            </a>
+
+          </div>
+          <div class="info">
+            <h3>TODO LIST</h3>
+            <!-- <p class="price">$29.99</p> -->
+            <p> LIST OF IMPORTANT MATTERS THAT NEEDED TO BE DONE</p>
+          </div>
+        </div>
+
+        <div class="single-card">
+          <a href="ALARM.html">
+          <div class="icon-area">
+          <img src="clock.pic.png" alt="" width="150px" height="150px">
+          </a>
+
+
+          </div>
+          <div class="info">
+            <h3>CLOCK</h3>
+            <p>TIME IS GOLD! CHECK YOUR LIST AND FINSIH YOUR TASKS ON TIME! </p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  // let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 4 seconds
+}
+
+
+
+
+
+
+
+// =============   alarm in bg ===================================================
+
+let ringtone = new Audio("./ringtone.mp3"); // Ensure this path is correct
+
+function getLocalTimeComponents() {
+  const now = new Date();
+  let hours = now.getHours();
+  const minutes = now.getMinutes();
+
+  // Determine AM or PM suffix
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+
+  // Convert to 12-hour format
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+
+  // Format hours and minutes to always be two digits
+  const formattedHours = String(hours).padStart(2, '0');
+  const formattedMinutes = String(minutes).padStart(2, '0');
+
+  // Return hour, minute, and AM/PM separately
+  return {
+      hour: formattedHours,
+      minute: formattedMinutes,
+      ampm: ampm
+  };
+}
+
+// Function to trigger the alarm
+function triggerAlarm() {
+    ringtone.loop = true; // Set to loop
+    ringtone.play().catch(error => {
+        console.error("Error playing sound:", error);
+    });
+}
+
+// Function to check the alarm
+function checkAlarm() {
+    const timeComponents = getLocalTimeComponents();
+
+    let Lhours = localStorage.getItem("alarmHour");
+    let Lminutes = localStorage.getItem("alarmMinute");
+    let Lampm = localStorage.getItem("alarmAMPM");
+
+    console.log("Current Time:", timeComponents.hour, timeComponents.minute, timeComponents.ampm);
+    console.log("Stored Alarm Time:", Lhours, Lminutes, Lampm);
+
+    if (Lhours === timeComponents.hour &&
+        Lminutes === timeComponents.minute &&
+        Lampm === timeComponents.ampm) {
+        console.log("Alarm Triggered!");
+        triggerAlarm();
+    } else {
+        console.log("No Alarm Triggered.");
+    }
+}
+
+// Check the alarm every second (1000 milliseconds)
+setInterval(checkAlarm, 1000); // Check every second
+
+</script>
+
+
+
+
+
+    </section>
+
+    <script src="sides.js"></script>
+  </body>
+</html>
