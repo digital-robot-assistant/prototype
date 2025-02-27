@@ -53,7 +53,6 @@ function showNotes() {
           <span>${note.Date}</span>
           <div class="settings">
             <i onclick='showMenu(this)' class="uil uil-ellipsis-h" style="opcity:0;" ></i>
-            <img src="3dots.pic.png" alt="" height="20px" width="30px" style="position:absolute; transform:translateX(-20px); opacity:1;"/>
             <ul class="menu">
               <li onclick="updateNote(${index},'${note.title}','${note.description}')"><i class="uil uil-pen"></i>edit</li>
               <li onclick="deleteNote(${index})" ><i class="uil uil-trash"></i>delete</li>
