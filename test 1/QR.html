@@ -175,5 +175,68 @@ h3{
 
 </style>
 
+<script>
+  // =============   alarm in bg ===================================================
+
+let ringtone = new Audio("./ringtone.mp3"); // Ensure this path is correct
+
+function getLocalTimeComponents() {
+  const now = new Date();
+  let hours = now.getHours();
+  const minutes = now.getMinutes();
+
+  // Determine AM or PM suffix
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+
+  // Convert to 12-hour format
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+
+  // Format hours and minutes to always be two digits
+  const formattedHours = String(hours).padStart(2, '0');
+  const formattedMinutes = String(minutes).padStart(2, '0');
+
+  // Return hour, minute, and AM/PM separately
+  return {
+      hour: formattedHours,
+      minute: formattedMinutes,
+      ampm: ampm
+  };
+}
+
+// Function to trigger the alarm
+function triggerAlarm() {
+    ringtone.loop = true; // Set to loop
+    ringtone.play().catch(error => {
+        console.error("Error playing sound:", error);
+    });
+}
+
+// Function to check the alarm
+function checkAlarm() {
+    const timeComponents = getLocalTimeComponents();
+
+    let Lhours = localStorage.getItem("alarmHour");
+    let Lminutes = localStorage.getItem("alarmMinute");
+    let Lampm = localStorage.getItem("alarmAMPM");
+
+    console.log("Current Time:", timeComponents.hour, timeComponents.minute, timeComponents.ampm);
+    console.log("Stored Alarm Time:", Lhours, Lminutes, Lampm);
+
+    if (Lhours === timeComponents.hour &&
+        Lminutes === timeComponents.minute &&
+        Lampm === timeComponents.ampm) {
+        console.log("Alarm Triggered!");
+        triggerAlarm();
+    } else {
+        console.log("No Alarm Triggered.");
+    }
+}
+
+// Check the alarm every second (1000 milliseconds)
+setInterval(checkAlarm, 1000); // Check every second
+
+</script>
+      
   </body>
 </html>
